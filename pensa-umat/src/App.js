@@ -7,6 +7,7 @@ import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import Topnavigation from './components/navigation/topnavigation';
 import AboutPage from './components/content/basicpage/aboutpage';
 import Error404 from './components/content/basicpage/Error/Error404';
+import Contactpage from './components/content/basicpage/contactpage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           
           <Route exact path="/" component={Homepage} />   
           <Route path ="/about-us" component={AboutPage}/>
+          <Route path ="/contact-us" component={Contactpage}/>
         </Switch>
       </Layout>    
       <Route exact component={Error404}/>
