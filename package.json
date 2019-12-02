@@ -1,0 +1,38 @@
+{
+  "name": "contentmangementsystem",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "client-install": "cd pensa-umat && npm install",
+    "start": "node ./bin/www",
+    "server": "nodemon ./bin/www",
+    "client": "npm start --prefix pensa-umat",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^5.0.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.1",
+    "mysql": "*",
+    "cors": "*",
+    "multer": "*"
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/japhet98/ContentMangementSystem.git"
+  },
+  "author": "Japhet Kuntu Blankson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/japhet98/ContentMangementSystem/issues"
+  },
+  "homepage": "https://github.com/japhet98/ContentMangementSystem#readme",
+  "description": ""
+}
