@@ -5,17 +5,13 @@ class JumbrotumPage extends Component {
         return (
             <div>
                 <Jumbotron style={{marginTop:"100px"}}>
-                    <div style={{textAlign:"center", marginTop:"50px"}}>
-                  <b> <h1>OUR VISION AND MISSIONS</h1></b>
-                 <blockquote> <h3 style={{ marginTop:"20px"}}>
-                      Our vision is to make impact in students life
-                      Our vision is to make impact in students life<br/>
-                      Our vision is to make impact in students life
-                      Our vision is to make impact in students life<br/>
-                      Our vision is to make impact in students life
-                      Our vision is to make impact in students life<br/>
-                  </h3>
-                  </blockquote>
+                    <div style={{textAlign:"center", marginTop:"50px", color:"gray",fontSize:"30px"}}>
+                 <span style={{textDecoration:"underline"}}>  <h1>1:1 | 1253</h1></span><br/>
+                 <span><h1>GENDER BALANCE  STUDENTS AND ALUMINI </h1></span>
+                     {/* <br/>GENDER BALANCE
+                   <h1>1253<br/>STUDENTS AND ALUMINI</h1>|</span> */}
+                  
+                
                    </div>
                 </Jumbotron>
             </div>
