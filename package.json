@@ -25,7 +25,7 @@
     "mysql": "*",
     "nodemon": "^2.0.1"
   },
-  "main": "app.js",
+  "main": "./bin/www.js",
   "devDependencies": {},
   "repository": {
     "type": "git",
