@@ -28,7 +28,13 @@ app.use(function(req, res, next) {
 });
 
 
+if(process.env.NODE_ENV ==="production"){
+  app.use(express.static('pensa-umat/build'))
 
+  app.get('*',(req,res)=>{
+    res.sendFile(path.resolve(__dirname,"pensa-umat","build","index.html"))
+  })
+}
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
