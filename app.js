@@ -7,6 +7,7 @@ var cors = require('cors')
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+
 var app = express();
 
 // view engine setup
@@ -28,10 +29,12 @@ app.use(function(req, res, next) {
 });
 
 if(process.env.NODE_ENV ==="production"){
-  app.use(express.static('pensa-umat/build'))
+  //app.use(express.static('pensa-umat/build'))
+  app.use(express.static(path.resolve(__dirname,'pensa-umat','build')))
+
 
   app.get('*',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,"pensa-umat","build","index.html"))
+    res.sendFile(path.resolve(__dirname,'pensa-umat','build','index.html'))
   })
 }
 
