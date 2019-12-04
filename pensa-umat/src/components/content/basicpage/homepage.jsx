@@ -15,7 +15,7 @@ class Homepage extends Component {
              <JumbrotumPage/>
              {/* Video */}
              <YouTubePage/>
-             {/* <Team/> */}
+             <Team/>
              {/*Our goal and vision */}
             </div>
         );

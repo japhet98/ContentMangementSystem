@@ -5,7 +5,7 @@
   "scripts": {
     "client-install": "cd pensa-umat && npm install",
     "start": "node ./bin/www",
-    "server": "nodemon ./bin/www",
+    "server": "node ./bin/www",
     "client": "npm start --prefix pensa-umat",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "npm install --prefix pensa-umat && npm run build  --prefix pensa-umat"
