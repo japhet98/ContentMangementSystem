@@ -1,90 +1,117 @@
 import React, { Component } from 'react';
-import '../../../res/css/contactform.css'
+import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBBtn, MDBInput } from "mdbreact";
+
+//import '../../../res/css/contactform.css'
 class Contactpage extends Component {
     render() {
+      var d = new Date()
+     var dat = d.toDateString()
         return (
-            <div>
-               <section id="contact">
-  
-  <h1 class="section-header">CONTACT</h1>
-  
-  <div class="contact-wrapper">
-    
-      {/* <!---------------- 
-
-      CONTACT PAGE LEFT 
-    
-      ----------------->  */}
-    
-    <form class="form-horizontal" role="form" method="post" action="contact.php">
-       
-      <div class="form-group">
-        <div class="col-sm-12">
-          <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value=""/>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <div class="col-sm-12">
-          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value=""/>
-        </div>
-      </div>
-
-      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
-      
-      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-        <div class="button">
-          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-        </div>
-      
-      </button>
-      
-    </form>
-    
-      {/* <!---------------- 
-
-      CONTACT PAGE RIGHT 
-    
-      ----------------->  */}
-    
-      <div class="direct-contact-container">
-
-        <ul class="contact-list">
-          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Tarkwa | WR</span></i></li>
-          
-          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:233557854823" title="Give me a call">(233) 557854823</a></span></i></li>
-          
-          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:japhetkuntublankson1@gmail.com" title="Send me an email">japhetkuntublankson1@gmail.com</a></span></i></li>
-          
-        </ul>
-
-        <hr/>
-        <ul class="social-media-list">
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-github" aria-hidden="true"></i></a>
-          </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-twitter" aria-hidden="true"></i></a>
-          </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-instagram" aria-hidden="true"></i></a>
-          </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-codepen" aria-hidden="true"></i></a>
-          </li>
-        </ul>
-        <hr/>
-
-        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
-
-      </div>
-    
-  </div>
-  
-</section>  
-  
-   
-            </div>
+          <section className="my-5">
+          <h2 className="h1-responsive font-weight-bold text-center my-5">
+            Contact us
+          </h2>
+          <p className="text-center w-responsive mx-auto pb-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+            error amet numquam iure provident voluptate esse quasi, veritatis
+            totam voluptas nostrum quisquam eum porro a pariatur veniam.
+          </p>
+          <MDBRow>
+            <MDBCol lg="5" className="lg-0 mb-4">
+              <MDBCard>
+                <MDBCardBody>
+                  <div className="form-header blue accent-1">
+                    <h3 className="mt-2">
+                      <MDBIcon icon="envelope" /> Write to us:
+                    </h3>
+                  </div>
+                  <p className="dark-grey-text">
+                    We'll write rarely, but only the best content.
+                  </p>
+                  <div className="md-form">
+                    <MDBInput
+                      icon="user"
+                      label="Your name"
+                      iconClass="grey-text"
+                      type="text"
+                      id="form-name"
+                    />
+                  </div>
+                  <div className="md-form">
+                    <MDBInput
+                      icon="envelope"
+                      label="Your email"
+                      iconClass="grey-text"
+                      type="text"
+                      id="form-email"
+                    />
+                  </div>
+                  <div className="md-form">
+                    <MDBInput
+                      icon="tag"
+                      label="Subject"
+                      iconClass="grey-text"
+                      type="text"
+                      id="form-subject"
+                    />
+                  </div>
+                  <div className="md-form">
+                    <MDBInput
+                      icon="pencil-alt"
+                      label="Icon Prefix"
+                      iconClass="grey-text"
+                      type="textarea"
+                      id="form-text"
+                    />
+                  </div>
+                  <div className="text-center">
+                    <MDBBtn color="light-blue">Submit</MDBBtn>
+                  </div>
+                </MDBCardBody>
+              </MDBCard>
+            </MDBCol>
+            <MDBCol lg="7">
+              <div
+                id="map-container"
+                className="rounded z-depth-1-half map-container"
+                style={{ height: "400px" }}
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d76765.98321148289!2d-73.96694563267306!3d40.751663750099084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1525939514494"
+                  title="This is a unique title"
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  style={{ border: 0 }}
+                />
+              </div>
+              <br />
+              <MDBRow className="text-center">
+                <MDBCol md="4">
+                  <MDBBtn tag="a" floating color="blue" className="accent-1">
+                    <MDBIcon icon="map-marker-alt" />
+                  </MDBBtn>
+                  <p>New York, 94126</p>
+                  <p className="mb-md-0">United States</p>
+                </MDBCol>
+                <MDBCol md="4">
+                  <MDBBtn tag="a" floating color="blue" className="accent-1">
+                    <MDBIcon icon="phone" />
+                  </MDBBtn>
+                  <p>+ 01 234 567 89</p>
+        <p className="mb-md-0"> {dat}   </p>
+                </MDBCol>
+                <MDBCol md="4">
+                  <MDBBtn tag="a" floating color="blue" className="accent-1">
+                    <MDBIcon icon="envelope" />
+                  </MDBBtn>
+                  <p>info@gmail.com</p>
+                  <p className="mb-md-0">sale@gmail.com</p>
+                </MDBCol>
+              </MDBRow>
+            </MDBCol>
+          </MDBRow>
+        </section>
         );
     }
 }

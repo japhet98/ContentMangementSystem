@@ -9,8 +9,8 @@ class YouTubePage extends React.Component {
   return (
 
     <div style ={{overflow:"hidden",paddingBottom:"56.25%",position:"relative",height:"0px"}}>
-      <iframe width="420" height="100" frameborder="0" allowfullscreen src={my_script} 
-      style={{left:"0px",top:"0px", height:"100%", width:"100%", position:"absolute"}}>
+      <iframe width="420" height="100" frameBorder="0" allowFullScreen src={my_script} 
+      style={{left:"0px",top:"0px", height:"70%", width:"100%", position:"absolute"}}>
 </iframe>
     </div>
     // <Player
